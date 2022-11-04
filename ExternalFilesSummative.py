@@ -19,7 +19,7 @@ def replaceline(list_num):
     with open ('Leaderboard.txt') as file:
         lines = file.readlines()
         
-    lines[list_num] = f"{name}: {endtime}s\n"
+    lines[list_num] = f"{name}: {endtime}\n"
     
     with open('Leaderboard.txt', 'w') as file:
         for line in lines:
